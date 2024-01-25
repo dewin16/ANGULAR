@@ -1,7 +1,10 @@
-//si se pone un nombre en el parametro de la funcion lo usa como predeterminado
-const sayHello = (name = "paco") =>`Hola mundo funcion ${name}`;
-//las dos expresiones hacen lo mismo, solo que al ser de una sola linea se puede simplificar
-const add = (a = 0, b = 0) => {
-    return a+b}
+//las llaves indican que es un objeto
+const invoice = {
+    id:10,
+    nombre: "Compras",
+    date: new Date(),
+    cliente: "Yokito",
+    total: 500
+};
 
-console.log(add(10,5));
+console.log(invoice);
