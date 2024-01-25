@@ -39,16 +39,11 @@ const invoice = {
     }
 
 };
+//se anida el objeto cliente con {} a invoice y a continiacion se muestr como modificarlo
+//invoice.cliente.name= "Yolamo"
+console.log(invoice);
 
-//esto asigna a invoice2 el mismo espacio en la memoria que tiene invoice, de tal forma que si se modifica invoice se modifica invoice2
-const invoice2 = invoice;
-//los 3 puntos se llaman spread, y lo que hacen es clonar los objetos de invoice y se crea una nueva instancia que seria invoice 3
-const invoice3 = { ... invoice};
+//const saludar = invoice.greeting();
+console.log(invoice.greeting());
 
-//dos == comparan el contenido y 3 === comparan el tipo de dato
-const result = invoice === invoice2;
-console.log(result);
-
-invoice.id = 20;
-console.log(invoice2.id);
-console.log(invoice3.id);
+console.log(`Total ${invoice.total()}`);
