@@ -1,20 +1,27 @@
 
 
-const promedio = 5.9;
+const products =  ["mesa", "silla", "teclado","salmon"];
 
-//se llama expresion ternaria
-//se evalua el promedio. "?" si se cumple ":" si no se cumple
-const status = ( promedio >= 5.5 ) ? "Aprobado" : "Rechazado"
+products.push("camion", "pistola");
 
-console.log(`Resultado : ${status}`);
+console.log(products);
 
-let max = 0;
+//funcion normal
+/*
+products.forEach(function(product){
+    console.log(product);
+})*/
 
-const a = 5;
-const b = 2;
-const c = 1;
+products.forEach(product =>{
+    console.log(product);
+})
 
- max = a > b ? a : b;
- max = max > c ? a : c;
+for(const prod of products){
+    console.log(prod);
+}
 
- console.log(max);
+for (let index = 0; index < products.length; index++) {
+    const element = products[index];
+    console.log(element);
+    
+}
