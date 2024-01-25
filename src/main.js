@@ -1,21 +1,14 @@
+//si se pone un nombre en el parametro de la funcion lo usa como predeterminado
+//en este caso paco seria el nombre determinado si no se define abajo juan
+function sayHello(name = "paco"){
 
-//let es una variable que puede cambiar
-let name = 'pedro';
-name = "andres";
+    const saludo = `Hola mundo funcion ${name}`;
+    //console.log("Hola mundo funcion");
 
-//const son valores inmutables
-const lastName = "Picapiedra";
-const condicion = true;
-
-if(condicion){
-    const lastName = "Chiquilicuatre";
-    console.log(lastName);
+    return saludo;
 }
-//se puede utilizar comillas invertidas ` para concatenar
-console.log("Hola mundo" + " " + name+ " " + lastName );
-//esto devuelve "Hola mundo name lastname"
-console.log(`Hola mundo name lastName `);
-//para que devuelva la informacion que contiene la variable se utiliza ${} que permite insertar un valor dinamico
-console.log(`Hola mundo ${name} ${lastName} `);
+//const result = sayHello();
+//console.log(result);
 
-
+//tambien se puede imprimir directamente la ejecucion dela funcion
+console.log(sayHello("juan"));
