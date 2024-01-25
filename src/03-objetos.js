@@ -43,7 +43,8 @@ const invoice = {
 //invoice.cliente.name= "Yolamo"
 console.log(invoice);
 
-//const saludar = invoice.greeting();
-console.log(invoice.greeting());
+
+const saludar = invoice.greeting();
+console.log(saludar);
 
 console.log(`Total ${invoice.total()}`);
